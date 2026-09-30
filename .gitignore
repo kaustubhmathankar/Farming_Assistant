@@ -1,0 +1,10 @@
+backend/.env
+frontend/.env
+backend/.venv/
+frontend/node_modules/
+backend/data/chroma/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+backend/data/uploads/chat/
