@@ -30,7 +30,7 @@ def retrieve(query: str, k: int | None = None) -> list[Document]:
 
 def format_documents(docs: list[Document]) -> tuple[str, list[dict]]:
     sources = []
-    chunks = []
+    chunks = []   
     seen = set()
     for doc in docs:
         meta = doc.metadata or {}

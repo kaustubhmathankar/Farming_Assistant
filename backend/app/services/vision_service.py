@@ -34,5 +34,5 @@ async def analyze_image(upload: UploadFile) -> str:
                 {"type": "image_url", "image_url": {"url": f"data:{upload.content_type or 'image/jpeg'};base64,{encoded}"}},
             ],
         }],
-    )
+    )  
     return response.choices[0].message.content or "No reliable visual observations were returned."
